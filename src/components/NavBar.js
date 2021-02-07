@@ -1,9 +1,25 @@
-import React from 'react'
+
+import React, { useEffect, useState } from 'react'
 import '../css/NavBar.css'
 
 function NavBar() {
+    const [show, handleshow] = useState(false)
+
+    const transitionNavbar = () =>{
+        if(window.scrollY > 100){
+            handleshow(true);
+        }else{
+            handleshow(false);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', transitionNavbar)
+        return () => window.removeEventListener('scroll', transitionNavbar)
+    }, [])
     return (
-        <div className = "navBar navBar_black">
+
+        <div className = {`navBar ${show && "navBar__black"}`}>
             <div className="navBar__content">
                 <img 
                     className = 'navBar__logo'           
