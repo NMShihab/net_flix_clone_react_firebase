@@ -23,7 +23,7 @@ function NavBar() {
             <div className="navBar__content">
                 <img 
                     className = 'navBar__logo'           
-                    src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
+                    src="https://assets.brand.microsites.netflix.io/assets/1561c76e-b389-11e7-9274-06c476b5c346_cm_800w.png?v=12"
                     alt=""
                 />
                 <img
