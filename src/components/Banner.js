@@ -2,6 +2,13 @@ import React from 'react'
 import '../css/Banner.css'
 
 function Banner() {
+
+    // This function will minimize description and add ....
+    function truncate(string,number) {
+        return string?.length > number ? string.substring(0,number-1) +'....' : string
+        
+    }
+
     return (
         <header
          className = "banner"
@@ -21,7 +28,9 @@ function Banner() {
                     <button className = "banner__button">My List</button>
                 </div>
                 <h1 className="banner_description">
-                    This is description
+                    {truncate(`This is descriptionThis is descriptionThis is description
+                        This is descriptionThis is descriptionThis is descriptionThis is description
+                        This is descriptionThis is descriptionThis is description`,150)}
                 </h1>
             </div>
 
