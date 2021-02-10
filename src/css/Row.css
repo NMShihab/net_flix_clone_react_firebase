@@ -5,15 +5,16 @@
 }
 .row__posters {
   display: flex;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   overflow-x: scroll;
   padding: 20px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
 }
 
 .row__posters::-webkit-scrollbar {
   display: none;
 }
-
 .row__poster {
   max-height: 100px;
   object-fit: contain;
@@ -23,10 +24,10 @@
 }
 
 .row__poster:hover {
-  transform: scale(1.09);
+  transform: scale(1.08);
   opacity: 1;
 }
 
 .row__posterLarge {
-  max-height: 250;
+  max-height: 300px;
 }
