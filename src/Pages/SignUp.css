@@ -46,7 +46,7 @@
 .signup__gray {
   color: gray;
 }
-.signup__link {
+.signup__link:hover {
   cursor: pointer;
   text-decoration: underline;
 }
